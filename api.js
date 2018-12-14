@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.get('/square(s)', controller.square_root);
+app.get('/square', controller.square_root);
 
 if (process.env.NODE_ENV !== 'test') {
     app.listen(PORT, () => console.log('Example app listening on port:'+ PORT))
