@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => res.send('Hello World! Visit <a href="/team">/team</a> for team members'));
+app.get('/', (req, res) => res.send('Hello World!'));
 
 
 
