@@ -1,9 +1,9 @@
 const fetch = require("node-fetch");
-const app = require('./api').app;
+const app = require('./api');
 
 const url = "http://localhost:3000";
 
-
+//dema è bello
 
 test('GET /square?string=hello should return 200 and result property in body (fetch)', () => {
     return fetch(url + '/square?s=4', { method: 'GET' })
@@ -15,3 +15,4 @@ test('GET /square?string=hello should return 200 and result property in body (fe
             expect(rjson).toBe(2);
         });
 });
+
